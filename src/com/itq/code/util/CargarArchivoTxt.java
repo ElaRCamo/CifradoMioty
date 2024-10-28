@@ -74,5 +74,3 @@ public class CargarArchivoTxt {
         return new Object[]{clave, contenidoBuilder.toString().trim()}; // Devolver clave y contenido
     }
 }
-
-

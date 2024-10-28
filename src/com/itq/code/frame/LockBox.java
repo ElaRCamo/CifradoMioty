@@ -84,6 +84,8 @@ public class LockBox  extends JFrame implements Runnable{
 		getContentPane().setFont(new Font("Consolas", Font.PLAIN, 15));
 		getContentPane().setLayout(null);
 		JPanel panelPrincipal = new JPanel();
+		btnCifrar.setVisible(false);
+        btnDescifrar.setVisible(false);
 		
 		panelPrincipal.setBounds(0, 688, 500, -687);
 		panelPrincipal.setOpaque(false);
@@ -339,7 +341,7 @@ public class LockBox  extends JFrame implements Runnable{
 	}
 	
 	private void descargarMensaje(String mensajeCifrado, char tipoProceso, int[][] clave) {
-		System.out.println("Inicia descarga");
+		System.out.println("\nInicia descarga...");
         DescargarMensaje descargar = new DescargarMensaje();
         String nombreArchivo = JOptionPane.showInputDialog(null, "Introduce el nombre del archivo");
         
